@@ -1,5 +1,13 @@
 # mruby-toml   [![Build Status](https://travis-ci.org/bamchoh/mruby-toml.svg?branch=master)](https://travis-ci.org/bamchoh/mruby-toml)
-Toml class
+
+[WIP]
+
+Toml parser for mruby. this library is using [libtoml](https://github.com/ajwans/libtoml)
+
+## limitation
+
+This library doesn't parse TOML_DATE type. it returns nil.
+
 ## install by mrbgems
 - add conf.gem line to `build_config.rb`
 
@@ -13,13 +21,8 @@ end
 ```
 ## example
 ```ruby
-p Toml.hi
-#=> "hi!!"
-t = Toml.new "hello"
-p t.hello
-#=> "hello"
-p t.bye
-#=> "hello bye"
+p Toml.parser("bar => 1")
+#=> {bar => 1}
 ```
 
 ## License
