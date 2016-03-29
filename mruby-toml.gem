@@ -1,0 +1,6 @@
+name: mruby-toml
+description: Toml class
+author: bamchoh
+website: https://github.com/bamchoh/mruby-toml
+protocol: git
+repository: https://github.com/bamchoh/mruby-toml.git
