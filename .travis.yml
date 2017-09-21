@@ -7,6 +7,7 @@ before_install:
 install:
     - sudo apt-get -qq install rake bison git gperf
 before_script:
+  - echo "test"
   - cd ../
   - git clone https://github.com/mruby/mruby.git
   - cd mruby
