@@ -16,7 +16,8 @@ before_script:
   - automake --add-missing 1>/dev/null 2>/dev/null | true
   - autoreconf
   - ./configure --prefix=/usr
-  - make & make install
+  - make
+  - sudo make install
   - cd ../
   - git clone https://github.com/ajwans/libtoml.git
   - cd libtoml
