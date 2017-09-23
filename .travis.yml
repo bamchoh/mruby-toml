@@ -8,7 +8,7 @@ install:
     - sudo apt-get -qq install rake bison git gperf build-essential pkg-config cmake libicu-dev libcunit1 libcunit1-dev ragel curl libtool autotools-dev autoconf automake
 before_script:
   - cd ../
-  - curl -L https://sourceforge.net/projects/cunit/files/CUnit/2.1-3/CUnit-2.1-3.tar.bz2/download > CUnit-2.1.-3.tar.bz2
+  - curl -L https://sourceforge.net/projects/cunit/files/CUnit/2.1-3/CUnit-2.1-3.tar.bz2/download > CUnit-2.1-3.tar.bz2
   - tar xjvf CUnit-2.1-3.tar.bz2
   - cd CUnit-2.1-3
   - libtoolize
