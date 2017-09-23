@@ -124,7 +124,8 @@ static mrb_value toml_value_to_mrb_value(mrb_state* mrb, struct toml_node *node)
 static mrb_value mrb_toml_parse(mrb_state *mrb, mrb_value self)
 {
   char *buf;
-  int len, ret;
+  mrb_int len;
+  int ret;
   struct toml_node *root;
   mrb_value value;
   mrb_get_args(mrb, "s", &buf, &len);
