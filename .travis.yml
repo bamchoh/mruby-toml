@@ -24,6 +24,7 @@ before_script:
   - cmake -G "Unix Makefiles"
   - make
   - export LD_LIBRARY_PATH=~/libtoml:$LD_LIBRARY_PATH
+  - echo $LD_LIBRARY_PATH
   - cd ../
   - git clone https://github.com/mruby/mruby.git
   - cd mruby
