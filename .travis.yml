@@ -5,8 +5,14 @@ compiler:
 before_install:
     - sudo apt-get -qq update
 install:
-    - sudo apt-get -qq install rake bison git gperf
+    - sudo apt-get -qq install rake bison git gperf build-essential pkg-config cmake libicu-dev libcunit1 libcunit1-dev ragel
 before_script:
+  - cd ../
+  - git clone https://github.com/ajwans/libtoml.git
+  - cd libtoml
+  - cmake -G "Unix Makefiles"
+  - make
+  - export LD_LIBRARY_PATH=~/libtoml:$LD_LIBRARY_PATH
   - cd ../
   - git clone https://github.com/mruby/mruby.git
   - cd mruby
