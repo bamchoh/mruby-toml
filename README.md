@@ -21,7 +21,7 @@ end
 ```
 ## example
 ```ruby
-p Toml.parser("bar => 1")
+p Toml.parser("bar = 1")
 #=> {bar => 1}
 ```
 
